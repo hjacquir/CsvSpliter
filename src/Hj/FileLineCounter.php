@@ -9,7 +9,6 @@ namespace Hj;
 
 use Hj\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Finder\Finder;
 
 /**
  * Count total line in a given file

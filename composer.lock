@@ -4,8 +4,47 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1c04f714580e508ae64484cd3e79bfa7",
+    "hash": "b6651dbf3fcc8628bcc5cb217aaed426",
     "packages": [
+        {
+            "name": "mikey179/vfsStream",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikey179/vfsStream.git",
+                "reference": "d8ec57b68719db77985266c620b86f09657f42f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d8ec57b68719db77985266c620b86f09657f42f6",
+                "reference": "d8ec57b68719db77985266c620b86f09657f42f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "org\\bovigo\\vfs\\": "src/main/php"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "Virtual file system to mock the real file system in unit tests.",
+            "homepage": "http://vfs.bovigo.org/",
+            "time": "2014-10-25 20:40:10"
+        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.x-dev",
@@ -387,12 +426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "8c47430b88b646f91a0255fea7aef72dc7ca57e1"
+                "reference": "0f59dca5634f4fe95320ad81a3a7c0997bbc53df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/8c47430b88b646f91a0255fea7aef72dc7ca57e1",
-                "reference": "8c47430b88b646f91a0255fea7aef72dc7ca57e1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/0f59dca5634f4fe95320ad81a3a7c0997bbc53df",
+                "reference": "0f59dca5634f4fe95320ad81a3a7c0997bbc53df",
                 "shasum": ""
             },
             "require": {
@@ -411,7 +450,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -435,7 +474,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-10 18:00:54"
+            "time": "2014-11-11 08:37:22"
         },
         {
             "name": "symfony/filesystem",
@@ -444,12 +483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "7d97789ea01c3c76ecaa59b954d162777033cbd4"
+                "reference": "4dc6471c29bb0537609ebb1bbbfe129e574f831b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/7d97789ea01c3c76ecaa59b954d162777033cbd4",
-                "reference": "7d97789ea01c3c76ecaa59b954d162777033cbd4",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/4dc6471c29bb0537609ebb1bbbfe129e574f831b",
+                "reference": "4dc6471c29bb0537609ebb1bbbfe129e574f831b",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +497,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -482,7 +521,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-22 15:54:44"
+            "time": "2014-11-11 08:37:22"
         },
         {
             "name": "symfony/finder",
@@ -491,12 +530,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "d556a66cbe5b2b81e7abc75b4066b057fbc7af94"
+                "reference": "db265d455072fc24f21da6e8b7f94944c7aef53f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/d556a66cbe5b2b81e7abc75b4066b057fbc7af94",
-                "reference": "d556a66cbe5b2b81e7abc75b4066b057fbc7af94",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/db265d455072fc24f21da6e8b7f94944c7aef53f",
+                "reference": "db265d455072fc24f21da6e8b7f94944c7aef53f",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +544,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -529,7 +568,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-26 07:46:28"
+            "time": "2014-11-11 08:37:22"
         },
         {
             "name": "symfony/yaml",
@@ -538,12 +577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "3db1d6cb51b49840e0f3b1663da23cccf0286bf6"
+                "reference": "0887d52700bf27f99ca400c5e7385275299c0928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/3db1d6cb51b49840e0f3b1663da23cccf0286bf6",
-                "reference": "3db1d6cb51b49840e0f3b1663da23cccf0286bf6",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/0887d52700bf27f99ca400c5e7385275299c0928",
+                "reference": "0887d52700bf27f99ca400c5e7385275299c0928",
                 "shasum": ""
             },
             "require": {
@@ -552,7 +591,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -576,7 +615,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-10 18:00:54"
+            "time": "2014-11-11 08:37:22"
         }
     ],
     "packages-dev": [],
