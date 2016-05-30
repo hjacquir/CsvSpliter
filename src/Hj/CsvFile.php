@@ -7,6 +7,7 @@
 
 namespace Hj;
 
+use Hj\Exception\FileFormatException;
 use Hj\Exception\FileNotFoundException;
 
 /**
@@ -49,6 +50,7 @@ class CsvFile
     public function __construct($filename, $delimiter = ",", $enclosure = '"', $escape = "\\")
     {
         $this->setFilename($filename);
+        $this->validCsv();
 
         $this->delimiter = $delimiter;
         $this->enclosure = $enclosure;
@@ -104,14 +106,32 @@ class CsvFile
     }
 
     /**
+     * @throws FileFormatException
+     */
+    private function validCsv()
+    {
+        if (false === $this->isCsv()) {
+            throw new FileFormatException('The file is not a csv file');
+        }
+    }
+
+    /**
+     * @return bool
+     */
+    private function isCsv()
+    {
+        return 'csv' === pathinfo($this->filename, PATHINFO_EXTENSION);
+    }
+
+    /**
      * @param string $filename
      *
      * @throws Exception\FileNotFoundException
      */
     private function setFilename($filename)
     {
-        if (true === is_dir($filename)) {
-            throw new FileNotFoundException("The file {$filename} does not exist");
+        if (false === is_file($filename)) {
+            throw new FileNotFoundException("The file does not exist");
         }
 
         $this->filename = $filename;
