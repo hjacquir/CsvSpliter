@@ -7,6 +7,8 @@
 
 namespace Hj\Exception;
 
-interface HjException
+
+class FileFormatException extends \Exception implements HjException
 {
+
 }
