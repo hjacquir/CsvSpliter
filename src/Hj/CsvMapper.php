@@ -31,6 +31,13 @@ class CsvMapper
     }
 
     /**
+     * Return all lines of the csv file
+     * example :
+     * array(
+     *  array(cell-11, cell-12),
+     *  array(cell-21, cell-22)
+     * )
+     *
      * @return array
      * @throws FileIsEmptyException
      */

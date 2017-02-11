@@ -19,7 +19,7 @@ use Hj\Exception\FileNotFoundException;
 class CsvFile
 {
     const CLASS_NAME = __CLASS__;
-    const CSV_EXTENSION = '.csv';
+    const CSV_FILE_EXTENSION = 'csv';
 
     /**
      * @var string
@@ -94,7 +94,7 @@ class CsvFile
      */
     public function getBaseName()
     {
-        return basename($this->filename, self::CSV_EXTENSION);
+        return basename($this->filename, '.' . self::CSV_FILE_EXTENSION);
     }
 
     /**
@@ -120,7 +120,7 @@ class CsvFile
      */
     private function isCsv()
     {
-        return 'csv' === pathinfo($this->filename, PATHINFO_EXTENSION);
+        return self::CSV_FILE_EXTENSION === pathinfo($this->filename, PATHINFO_EXTENSION);
     }
 
     /**
